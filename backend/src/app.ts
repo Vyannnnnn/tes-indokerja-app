@@ -5,7 +5,7 @@ import { errorHandler } from "./middlewares/error";
 
 const app = express();
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || "*",
+  origin: process.env.CORS_ORIGIN || "*" || "https://tes-indokerja-app-frontend.vercel.app",
   credentials: true,
 }));
 app.use(express.json());
